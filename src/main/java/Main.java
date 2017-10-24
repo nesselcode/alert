@@ -15,11 +15,6 @@ public class Main {
 
         final WebClient webClient = new WebClient(BrowserVersion.CHROME);
 
-        if (InetAddress.getLocalHost().getHostName().startsWith("GFI")) {
-            webClient.getOptions().setProxyConfig(new ProxyConfig("85.115.60.201", 80));
-        }
-
-
         webClient.getOptions().setCssEnabled(false);
         webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         webClient.getOptions().setThrowExceptionOnScriptError(false);
